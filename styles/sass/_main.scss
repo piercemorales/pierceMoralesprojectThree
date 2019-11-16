@@ -2,5 +2,20 @@
 @import "header";
 
 .questionContent {
-  
+  width: 60%;
 }
+.questionImage {
+  width: 40%;
+}
+
+.questionContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  img {
+  vertical-align: middle;
+    width: 100%;
+  }
+}
+

@@ -181,7 +181,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 body {
   font-size: 125%;
-  background: #f4efd3;
+  background-image: url(../assets/body-bg.png);
 }
 
 ul, li,
@@ -212,10 +212,19 @@ h2, label {
 h2 {
   font-weight: 400;
   padding: 50px 0px;
+  font-size: 2.2rem;
+}
+
+label {
+  font-size: 1.5rem;
+}
+
+fieldset {
+  border: none;
 }
 
 .headerContent {
-  background: #f45905;
+  background-image: url(../assets/body-bg.png);
   height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -248,6 +257,7 @@ h2 {
 
 .nameText h1 {
   font-size: 4.8rem;
+  color: #ebc634;
   font-family: 'Permanent Marker', sans-serif;
   text-transform: uppercase;
   text-shadow: 4px 3px 5px #000;
@@ -258,20 +268,67 @@ h2 {
   width: 50%;
 }
 
-.nameText input {
-  background-color: #c70d3a;
+.nameText a {
+  text-decoration: none;
+  color: black;
+  background-color: #eac632;
   border: none;
   padding: 20px 60px;
   border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 10px 0px #000;
+          box-shadow: 0px 0px 10px 0px #000;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
-.nameText img {
-  max-width: 60%;
+.nameText a:hover {
+  background-color: #bb9e2a;
+}
+
+.speakerImage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.speakerImage img {
+  max-width: 20%;
+  min-height: 150px;
+  max-height: 300px;
+}
+
+.questionContent {
+  width: 60%;
+}
+
+.questionImage {
+  width: 40%;
+}
+
+.questionContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.questionContainer img {
+  vertical-align: middle;
+  width: 100%;
 }
 
 body {
   font-size: 125%;
-  background: #f4efd3;
+  background-image: url(../assets/body-bg.png);
 }
 
 ul, li,
@@ -302,10 +359,19 @@ h2, label {
 h2 {
   font-weight: 400;
   padding: 50px 0px;
+  font-size: 2.2rem;
+}
+
+label {
+  font-size: 1.5rem;
+}
+
+fieldset {
+  border: none;
 }
 
 .headerContent {
-  background: #f45905;
+  background-image: url(../assets/body-bg.png);
   height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -338,6 +404,7 @@ h2 {
 
 .nameText h1 {
   font-size: 4.8rem;
+  color: #ebc634;
   font-family: 'Permanent Marker', sans-serif;
   text-transform: uppercase;
   text-shadow: 4px 3px 5px #000;
@@ -348,13 +415,34 @@ h2 {
   width: 50%;
 }
 
-.nameText input {
-  background-color: #c70d3a;
+.nameText a {
+  text-decoration: none;
+  color: black;
+  background-color: #eac632;
   border: none;
   padding: 20px 60px;
   border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 10px 0px #000;
+          box-shadow: 0px 0px 10px 0px #000;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
-.nameText img {
-  max-width: 60%;
+.nameText a:hover {
+  background-color: #bb9e2a;
+}
+
+.speakerImage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.speakerImage img {
+  max-width: 20%;
+  min-height: 150px;
+  max-height: 300px;
 }

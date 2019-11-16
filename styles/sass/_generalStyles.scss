@@ -1,6 +1,6 @@
 body {
   font-size: 125%;
-  background: #f4efd3;
+  background-image: url(../assets/body-bg.png);
 }
 
 ul, li,
@@ -26,11 +26,18 @@ body {
 
 h2, label {
     text-transform: uppercase;
-
 }
 
 h2 {
     font-weight: 400;
     padding: 50px 0px;
-
+    font-size: 2.2rem;
   }
+
+label {
+  font-size: 1.5rem;
+}
+
+fieldset {
+  border: none;
+}

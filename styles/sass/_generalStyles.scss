@@ -73,5 +73,9 @@ a {
     &:active {
       background-color: darken($primaryColor, 10%);
     }
-    
+    @include mq-mobile {
+      width: 100%;
+      padding: 10px 15px;
+
+    }
     }

@@ -1,46 +1,3 @@
-  // MVP(Minimum Viable Product) Goals *
-    // The quiz loads a prompt for users name
-    // userName shall be saved in variable for the end
-    // quiz generates 5 sets of questions
-    // user chooses an option and eliminates others 
-    // quiz runs through users input
-    // quiz tailors a rapper who the user would be
-
-
-
-    // Stretch Goals *
-    // animations to go along with rappers pictures
-    // sounds to go along with end result
-    // add more rappers and questions
-    // revise the point system
-
-
-
-
-// SAFI SYSTEM
-// point system
-// 3 rappers 3 questions add up totals
-
-// each rapper tallies points
-// kanye 1-3, drake 4-6, chance, 7,8,9
-
-
-
-
-
-
-// NEW AND IMPROVED
-// tally system 
-// the questions provided are each tailored towards one rapper
-// Each response will then be tallied to the rapper; ie - Fastfood = mcdonalds --- 1 tally towards chance the rapper
-// randomize for tie 
-
-
-
-
-
-
-
 $(document).ready(function () {
 
   const rapperTally = {
@@ -80,7 +37,6 @@ $(document).ready(function () {
   };
 
 
-
   // smooth scroll
   var scroll = new SmoothScroll('a[href*="#"]', {
     speed: 1000,
@@ -96,8 +52,6 @@ $(document).ready(function () {
 
   
   
-  // calling the rapper object list
-  // console.log(rapperTally);
 
   
   // function that finds the answer of questions and tallies them
@@ -107,14 +61,13 @@ $(document).ready(function () {
     if (result) {
     // targeting the value in the object
     for (let i = 0; i < result.length; i++) {
-      // console.log(result[i].value);
         rapperTally[result[i].value]++;
      } 
     } 
-    $('form').on('submit'), function(){
-      $('html,body').scrollBottom(0);
 
-    }
+
+
+
 
 
     // Finding the most tallied rapper and declaring as a variable
@@ -123,8 +76,14 @@ $(document).ready(function () {
       $('.quizResult').html(`<div id="quizEnd" class="resultContent wrapper"><h2>You Are...</h2><h3>${winningOption[winner].name}</h3><p>${winningOption[winner].description}</p><img src="${winningOption[winner].image}"></div>`);
     } 
      
+    // finish button that smooth scrolls to the end result
+      $('html, body').animate({
+        scrollTop: $("#quizEnd").offset().top
+      }, 1000);
 
   
 
   })
+
+
 });

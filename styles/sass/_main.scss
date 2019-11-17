@@ -17,7 +17,7 @@ main {
   label {
     font-size: 2rem;
     @include mq-mobile {
-      font-size: 1.2rem;
+      font-size: 1.5rem;
     }
 
   }
@@ -58,6 +58,7 @@ fieldset {
     bottom: 5px;
     left: 30px;
     opacity: 0;
+    margin: 20px 0;
   }
 
   input[type="radio"]:checked + label::before {
@@ -115,7 +116,7 @@ fieldset {
     max-width: 30%;
     margin: 0 auto;
     @include mq-tablet {
-      max-width: 60%;
+      max-width: 40%;
     }
   }
 }

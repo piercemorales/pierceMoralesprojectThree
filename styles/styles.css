@@ -465,7 +465,7 @@ main {
 
 @media (max-width: 610px) {
   .questionContent label {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -525,6 +525,7 @@ fieldset a {
   bottom: 5px;
   left: 30px;
   opacity: 0;
+  margin: 20px 0;
 }
 
 .questionContainer input[type="radio"]:checked + label::before {
@@ -601,7 +602,7 @@ fieldset a {
 
 @media (max-width: 940px) {
   .resultContent img {
-    max-width: 60%;
+    max-width: 40%;
   }
 }
 

@@ -105,25 +105,14 @@ $(document).ready(function () {
 
     // targeting the value in the object
     for (let i = 0; i < result.length; i++) {
-      console.log(result[i].value)
+      console.log(result[i].value);
         rapperTally[result[i].value]++;
-      // const winnerResult = rapperTally.filter((value) => {
-      //   return rapperTally.value <= 1
-      // });
-      // console.log(winnerResult);
-      // let max = Math.max(rapperTally.value);
-      // console.log(max)
+    }
 
-      // for (let value in rapperTally){
-      //   console.log(rapperTally.value) 
-      // }
-      
-
-
-      let winner = Object.keys(rapperTally).reduce((a, b) => rapperTally[a] > rapperTally[b] ? a : b);
-      // if (winner === );
-      console.log(`The winner is ${winner}`)  
-
+    let winner = Object.keys(rapperTally).reduce((a, b) => rapperTally[a] > rapperTally[b] ? a : b);
+    console.log(`You got ${winner}`);
+    if (winner) {
+      $('.endResult').html(`<p>You got ${winningOption[winner]}`)
     }
 
     // let winnerNumber = Number(rapperTally);

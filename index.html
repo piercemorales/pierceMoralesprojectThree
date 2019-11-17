@@ -11,17 +11,19 @@
   
 </head>
 <body>
-    <header class="headerContent wrapper">
-      <div class="nameText">
-        <h1 class="quizTitle">Which Rapper are you?</h1>
-        <h2>Find out what rap artist you would be!</h2>
-        <!-- <img class="animated pulse infinite" src="assets/header-image.png" alt=""> -->
-        <a data-scroll href="#main">Start the Quiz</a>
-      </div>
-      <div class="speakerImage">
-        <img src="assets/speakers2.png" alt="a picture/animation of speakers" class="animated pulse infinite">
-        <img src="assets/speakers.png" alt="a picture/animation of speakers" class="animated pulse infinite">
-      </div>
+    <header class="headerMain">
+      <section class="headerContent wrapper">
+        <div class="nameText">
+          <h1 class="quizTitle">Which Rapper are you?</h1>
+          <h2>Find out what rap artist you would be!</h2>
+          <!-- <img class="animated pulse infinite" src="assets/header-image.png" alt=""> -->
+          <a data-scroll href="#main">Start the Quiz</a>
+        </div>
+        <div class="speakerImage">
+          <img src="assets/speakers2.png" alt="a picture/animation of speakers" class="animated pulse infinite">
+          <img src="assets/speakers.png" alt="a picture/animation of speakers" class="animated pulse infinite">
+        </div>
+      </section>
     </header>
     <main id="main">
       <section class="quizMain wrapper">
@@ -30,7 +32,7 @@
             <div class="questionContainer">
     
               <div class="questionContent">
-                <h2>Too lazy to make dinner - Where are you going to eat?</h2>
+                <h2>Too lazy to make dinner, Where are you going to eat?</h2>
               
                 <!-- Response to Questions beings -->
                 <div class="response">
@@ -225,10 +227,21 @@
     </main>
         <!-- end result begins -->
 
+        <!-- entering results of quiz here through JS -->
     <section class="quizResult">
       
       <div class="endResult"></div>
     </section>
+<footer id="footer">
+  <section class="footerMain">
+    <div class="copyrightPierce">
+      <p> Pierce Morales © 2019</p>
+    </div>
+    
+  </section>
+</footer>
+
+    
 <!-- jQuery & JS sourcinggggg -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>

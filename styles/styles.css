@@ -181,7 +181,6 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 body {
   font-size: 125%;
-  background-image: url(../assets/body-bg.png);
 }
 
 ul, li,
@@ -202,7 +201,8 @@ body {
 
 .wrapper {
   margin: 0 auto;
-  width: 90%;
+  width: 80%;
+  max-width: 1200px;
 }
 
 h2, label {
@@ -212,7 +212,7 @@ h2, label {
 h2 {
   font-weight: 400;
   padding: 50px 0px;
-  font-size: 2.2rem;
+  font-size: 2.5rem;
 }
 
 label {
@@ -223,9 +223,11 @@ fieldset {
   border: none;
 }
 
-.headerContent {
-  background-image: url(../assets/body-bg.png);
-  height: 90vh;
+.headerMain {
+  background-image: url(../assets/header-bg.png);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -300,15 +302,26 @@ fieldset {
   max-height: 300px;
 }
 
+main {
+  background-image: url(../assets/body-bg.png);
+}
+
 .questionContent {
   width: 60%;
+  margin: auto;
+}
+
+.questionContent label {
+  font-size: 2rem;
 }
 
 .questionImage {
   width: 40%;
+  margin: auto;
 }
 
 .questionContainer {
+  height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -321,14 +334,47 @@ fieldset {
           justify-content: space-between;
 }
 
+.questionContainer input {
+  display: none;
+}
+
+.questionContainer input[type="radio"]:checked + label::before {
+  background-color: #c28f86;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.questionContainer input[type="radio"] + label::before {
+  content: '';
+  display: inline-block;
+  border: 5px solid #000;
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  top: 10px;
+  position: relative;
+}
+
 .questionContainer img {
   vertical-align: middle;
   width: 100%;
 }
 
+.footerMain {
+  background: #eac632;
+  text-align: center;
+  border-top: 2px solid #000;
+}
+
+.footerMain p {
+  padding: 5px;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
 body {
   font-size: 125%;
-  background-image: url(../assets/body-bg.png);
 }
 
 ul, li,
@@ -349,7 +395,8 @@ body {
 
 .wrapper {
   margin: 0 auto;
-  width: 90%;
+  width: 80%;
+  max-width: 1200px;
 }
 
 h2, label {
@@ -359,7 +406,7 @@ h2, label {
 h2 {
   font-weight: 400;
   padding: 50px 0px;
-  font-size: 2.2rem;
+  font-size: 2.5rem;
 }
 
 label {
@@ -370,9 +417,11 @@ fieldset {
   border: none;
 }
 
-.headerContent {
-  background-image: url(../assets/body-bg.png);
-  height: 90vh;
+.headerMain {
+  background-image: url(../assets/header-bg.png);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

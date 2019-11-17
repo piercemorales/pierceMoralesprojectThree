@@ -1,9 +1,10 @@
 
-.headerContent {
+.headerMain {
   // background: #f45905;
-  background-image: url(../assets/body-bg.png);
-
-  height: 90vh;
+  background-image: url(../assets/header-bg.png);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;

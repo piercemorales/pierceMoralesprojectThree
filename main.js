@@ -90,6 +90,7 @@ $(document).ready(function () {
     speed: 1000,
     speedAsDuration: true
   });
+  
 
   
   
@@ -100,31 +101,31 @@ $(document).ready(function () {
   // function that finds the answer of questions and tallies them
   $('form').on('submit', function(e){ 
     e.preventDefault();
-    let result = $(this).find('input:checked')
-
-
+    const result = $(this).find('input:checked')
+    if (result) {
     // targeting the value in the object
     for (let i = 0; i < result.length; i++) {
-      console.log(result[i].value);
+      // console.log(result[i].value);
         rapperTally[result[i].value]++;
+     } 
+    } else {
+      $(this).find('.missedQuestion').text('pick')
     }
 
-    let winner = Object.keys(rapperTally).reduce((a, b) => rapperTally[a] > rapperTally[b] ? a : b);
-    console.log(`You got ${winner}`);
+
+
+    // Finding the most talleid rapper and declaring as a variable
+    const winner = Object.keys(rapperTally).reduce((a, b) => rapperTally[a] > rapperTally[b] ? a : b);
     if (winner) {
-      $('.endResult').html(`<p>You got ${winningOption[winner]}`)
-    }
-
-    // let winnerNumber = Number(rapperTally);
-    // console.log(winnerNumber)
-
-
-
+      $('.quizResult').html(`<div id="quizEnd" class="resultContent wrapper"><h2>You Are...</h2><h3>${winningOption[winner].name}</h3><p>${winningOption[winner].description}</p><img src="${winningOption[winner].image}"></div>`);
+    } 
+     
 
   
 
   })
 });
+
 
 // Each question has 4 multiple choice options the user is able to choose.
 

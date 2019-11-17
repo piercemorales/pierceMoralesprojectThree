@@ -1,3 +1,5 @@
+@import "colors";
+
 body {
   font-size: 125%;
 }
@@ -41,3 +43,24 @@ label {
 fieldset {
   border: none;
 }
+
+a { 
+  text-align: center;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    background-color: $primaryColor;
+    border:none;
+    padding: 10px 60px;
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+    letter-spacing: 2px;
+    &:hover {
+      background-color: lighten($primaryColor, 20%);
+    }
+    &:active {
+      background-color: darken($primaryColor, 10%);
+    }
+    
+    }

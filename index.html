@@ -17,12 +17,14 @@
           <h1 class="quizTitle">Which Rapper are you?</h1>
           <h2>Find out what rap artist you would be!</h2>
           <!-- <img class="animated pulse infinite" src="assets/header-image.png" alt=""> -->
-          <a data-scroll href="#main">Start the Quiz</a>
         </div>
         <div class="speakerImage">
           <img src="assets/speakers2.png" alt="a picture/animation of speakers" class="animated pulse infinite">
+
           <img src="assets/speakers.png" alt="a picture/animation of speakers" class="animated pulse infinite">
         </div>
+          <a data-scroll href="#main">Start</a>
+
       </section>
     </header>
     <main id="main">
@@ -36,7 +38,7 @@
               
                 <!-- Response to Questions beings -->
                 <div class="response">
-                  <input id="postM" name="question1" type="radio" value="postM">
+                  <input id="postM" name="question1" type="radio" value="postM" required>
                   <label for="postM">Buffalo Wild Wing</label>
                 </div>
                 <div class="response">
@@ -59,9 +61,11 @@
 
               </div>
               <div class="questionImage"><img src="assets/question1-image.png" alt=""></div>
-            
             </div>
+
+            <a href="#question2">next</a>
           </fieldset>
+
           <!-- First question ends -->
 
 
@@ -76,7 +80,7 @@
 
                 <!-- Response to Questions beings -->
                 <div class="response">
-                  <input id="drizzyD2" name="question2" type="radio" value="drizzyD">
+                  <input id="drizzyD2" name="question2" type="radio" value="drizzyD" required>
                   <label for="drizzyD2">Crying at the club</label>
                 </div>
                 <div class="response">
@@ -101,7 +105,9 @@
               <div class="questionImage"><img src="assets/question2-image.png" alt=""></div>
 
             </div>
+            <a href="#question3">next</a>
           </fieldset>
+
           <!-- 2nd Question ends -->
 
 
@@ -116,7 +122,7 @@
 
                 <!-- Response to Questions beings -->
                 <div class="response">
-                  <input id="nickiM3" name="question3" type="radio" value="nickiM">
+                  <input id="nickiM3" name="question3" type="radio" value="nickiM" required>
                   <label for="nickiM3">Lipstick</label>
                 </div>
                 <div class="response">
@@ -141,7 +147,10 @@
               <div class="questionImage"><img src="assets/question3-image.png" alt=""></div>
 
             </div>
+            <a href="#question4">next</a>
           </fieldset>
+
+
           <!-- 3rd question ends -->
 
 
@@ -156,7 +165,7 @@
 
                 <!-- Response to Questions beings -->
                 <div class="response">
-                  <input id="kanyeW4" name="question4" type="radio" value="kanyeW">
+                  <input id="kanyeW4" name="question4" type="radio" value="kanyeW" required>
                   <label for="kanyeW4">Atlanta</label>
                 </div>
                 <div class="response">
@@ -181,7 +190,9 @@
               <div class="questionImage"><img src="assets/question4-image.png" alt=""></div>
 
             </div>
+            <a href="#question5">next</a>
           </fieldset>
+
           <!-- 4th question ends -->
 
 
@@ -196,7 +207,7 @@
 
                 <!-- Response to Questions beings -->
                 <div class="response">
-                  <input id="drizzyD5" name="question5" type="radio" value="drizzyD">
+                  <input id="drizzyD5" name="question5" type="radio" value="drizzyD" required>
                   <label for="drizzyD5">Suit and tie</label>
                 </div>
                 <div class="response">
@@ -219,32 +230,39 @@
               </div>
               <div class="questionImage"><img src="assets/question5-image.png" alt=""></div>
             </div>
-            <input type="submit" name="submitandfinish" value="Submit and Finish">
+            <div class="submitBtn">
+              <input type="submit" name="submitandfinish" value="Submit and Finish">
+              <p class="missedQuestion"></p>
+            </div>
           </fieldset>
+          
         </form>
         <!-- 5th question ends -->
       </section>
-    </main>
-        <!-- end result begins -->
-
-        <!-- entering results of quiz here through JS -->
-    <section class="quizResult">
+      <!-- end result begins -->
       
-      <div class="endResult"></div>
-    </section>
-<footer id="footer">
-  <section class="footerMain">
-    <div class="copyrightPierce">
-      <p> Pierce Morales © 2019</p>
-    </div>
-    
-  </section>
-</footer>
+      <!-- entering results of quiz here through JS -->
+      <section class="quizResult id="quizEnd">
+       
+      
+      </section>
+    </main>
 
-    
+    <!-- footer begins -->
+    <footer id="footer">
+      <section class="footerMain">
+        <div class="copyrightPierce">
+          <p> Pierce Morales © 2019</p>
+        </div>
+        
+      </section>
+    </footer>
+      
 <!-- jQuery & JS sourcinggggg -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
 <script src="main.js"></script>
+
+
 </body>
 </html>

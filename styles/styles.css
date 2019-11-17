@@ -223,154 +223,27 @@ fieldset {
   border: none;
 }
 
-.headerMain {
-  background-image: url(../assets/header-bg.png);
-  background-size: cover;
-  background-attachment: fixed;
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.nameText {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+a {
   text-align: center;
-}
-
-.nameText h1 {
-  font-size: 4.8rem;
-  color: #ebc634;
-  font-family: 'Permanent Marker', sans-serif;
+  font-size: 1.2rem;
   text-transform: uppercase;
-  text-shadow: 4px 3px 5px #000;
-}
-
-.nameText h2 {
-  text-shadow: 4px 3px 10px #000;
-  width: 50%;
-}
-
-.nameText a {
   text-decoration: none;
-  color: black;
+  color: #fff;
   background-color: #eac632;
   border: none;
-  padding: 20px 60px;
+  padding: 10px 60px;
   border-radius: 10px;
-  -webkit-box-shadow: 0px 0px 10px 0px #000;
-          box-shadow: 0px 0px 10px 0px #000;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+  letter-spacing: 2px;
 }
 
-.nameText a:hover {
-  background-color: #bb9e2a;
+a:hover {
+  background-color: #f3e08f;
 }
 
-.speakerImage {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.speakerImage img {
-  max-width: 20%;
-  min-height: 150px;
-  max-height: 300px;
-}
-
-main {
-  background-image: url(../assets/body-bg.png);
-}
-
-.questionContent {
-  width: 60%;
-  margin: auto;
-}
-
-.questionContent label {
-  font-size: 2rem;
-}
-
-.questionImage {
-  width: 40%;
-  margin: auto;
-}
-
-.questionContainer {
-  height: 90vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.questionContainer input {
-  display: none;
-}
-
-.questionContainer input[type="radio"]:checked + label::before {
-  background-color: #c28f86;
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
-}
-
-.questionContainer input[type="radio"] + label::before {
-  content: '';
-  display: inline-block;
-  border: 5px solid #000;
-  margin-right: 10px;
-  width: 30px;
-  height: 30px;
-  border-radius: 5px;
-  top: 10px;
-  position: relative;
-}
-
-.questionContainer img {
-  vertical-align: middle;
-  width: 100%;
-}
-
-.footerMain {
-  background: #eac632;
-  text-align: center;
-  border-top: 2px solid #000;
-}
-
-.footerMain p {
-  padding: 5px;
-  text-transform: uppercase;
-  font-size: 1rem;
+a:active {
+  background-color: #d3ae16;
 }
 
 body {
@@ -417,6 +290,29 @@ fieldset {
   border: none;
 }
 
+a {
+  text-align: center;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  background-color: #eac632;
+  border: none;
+  padding: 10px 60px;
+  border-radius: 10px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  letter-spacing: 2px;
+}
+
+a:hover {
+  background-color: #f3e08f;
+}
+
+a:active {
+  background-color: #d3ae16;
+}
+
 .headerMain {
   background-image: url(../assets/header-bg.png);
   background-size: cover;
@@ -432,6 +328,7 @@ fieldset {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
 }
 
 .nameText {
@@ -448,37 +345,213 @@ fieldset {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
 }
 
 .nameText h1 {
   font-size: 4.8rem;
-  color: #ebc634;
+  color: #eac632;
   font-family: 'Permanent Marker', sans-serif;
   text-transform: uppercase;
   text-shadow: 4px 3px 5px #000;
 }
 
 .nameText h2 {
-  text-shadow: 4px 3px 10px #000;
+  text-shadow: 0px 0px 15px #000;
   width: 50%;
+  color: #fff;
 }
 
-.nameText a {
-  text-decoration: none;
-  color: black;
-  background-color: #eac632;
-  border: none;
-  padding: 20px 60px;
-  border-radius: 10px;
-  -webkit-box-shadow: 0px 0px 10px 0px #000;
-          box-shadow: 0px 0px 10px 0px #000;
+.speakerImage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.speakerImage img {
+  max-width: 20%;
+  min-height: 150px;
+  max-height: 300px;
+}
+
+main {
+  background-image: url(../assets/body-bg.png);
+}
+
+.questionContent {
+  width: 60%;
+  margin: auto;
+}
+
+.questionContent label {
+  font-size: 2rem;
+}
+
+.questionImage {
+  width: 40%;
+  margin: auto;
+}
+
+fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+fieldset a {
+  margin: 0 auto;
+}
+
+.questionContainer {
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.questionContainer input {
+  position: relative;
+  bottom: 5px;
+  left: 30px;
+  opacity: 0;
+}
+
+.questionContainer input[type="radio"]:checked + label::before {
+  background-color: #c28f86;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
 
-.nameText a:hover {
-  background-color: #bb9e2a;
+.questionContainer input[type="radio"] + label::before {
+  content: '';
+  display: inline-block;
+  border: 5px solid #000;
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  top: 10px;
+  position: relative;
+}
+
+.questionContainer img {
+  vertical-align: middle;
+  width: 100%;
+}
+
+.footerMain {
+  background: #eac632;
+  text-align: center;
+  border-top: 2px solid #000;
+}
+
+.footerMain p {
+  padding: 5px;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.resultContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  height: 90vh;
+}
+
+.resultContent h3 {
+  font-size: 4rem;
+}
+
+.resultContent p {
+  font-size: 2rem;
+  padding: 30px 0;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.resultContent img {
+  max-width: 30%;
+  margin: 0 auto;
+}
+
+.submitBtn {
+  margin: 0 auto;
+}
+
+.submitBtn input {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: none;
+  background-color: #6b0000;
+  padding: 20px 70px;
+  color: white;
+  border-radius: 10px;
+}
+
+.headerMain {
+  background-image: url(../assets/header-bg.png);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.nameText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nameText h1 {
+  font-size: 4.8rem;
+  color: #eac632;
+  font-family: 'Permanent Marker', sans-serif;
+  text-transform: uppercase;
+  text-shadow: 4px 3px 5px #000;
+}
+
+.nameText h2 {
+  text-shadow: 0px 0px 15px #000;
+  width: 50%;
+  color: #fff;
 }
 
 .speakerImage {

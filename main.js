@@ -41,10 +41,6 @@
 
 
 
-// Pseudocode
-// On load - there will be a prompt for an input for the user to enter their name
-// userName will be saved for the end result
-// The game starts by generating 5 sets of questions with multiple choice answers
 $(document).ready(function () {
 
   const rapperTally = {
@@ -91,6 +87,12 @@ $(document).ready(function () {
     speedAsDuration: true
   });
   
+  // restarts the quiz
+  $('a.reset').on('click', function () {
+    location.reload();
+    $('html,body').scrollTop(0);
+  });
+  
 
   
   
@@ -108,13 +110,14 @@ $(document).ready(function () {
       // console.log(result[i].value);
         rapperTally[result[i].value]++;
      } 
-    } else {
-      $(this).find('.missedQuestion').text('pick')
+    } 
+    $('form').on('submit'), function(){
+      $('html,body').scrollBottom(0);
+
     }
 
 
-
-    // Finding the most talleid rapper and declaring as a variable
+    // Finding the most tallied rapper and declaring as a variable
     const winner = Object.keys(rapperTally).reduce((a, b) => rapperTally[a] > rapperTally[b] ? a : b);
     if (winner) {
       $('.quizResult').html(`<div id="quizEnd" class="resultContent wrapper"><h2>You Are...</h2><h3>${winningOption[winner].name}</h3><p>${winningOption[winner].description}</p><img src="${winningOption[winner].image}"></div>`);
@@ -125,36 +128,3 @@ $(document).ready(function () {
 
   })
 });
-
-
-// Each question has 4 multiple choice options the user is able to choose.
-
-
-
-// The questions will consist of different types of topics; ie (Where would you go for dinner, political views, genre of rap)
-
-// Responses will be based off a point system with each question tallied to a specific rapper
-
-// User can only choose 1 option out of the 4
-
-// The inputs taken from the user will then return the input provided
-
-// the results are based off various rappers personality types and lifestyle       - researched through the internet
-
-
-// After all questions are answered the user is able to click 'submit' button
-    // If any questions were missed, user will be reminded to answer all questions before being able to submit the quiz
-    // required attribute
-
-// Depending on the user input/choice the quiz will tally the total answers towards the rapper
-
-
-// the rapper with the most tallies will be the users end result
-  // randomize if the user ends with a tie between two rappers
-// It will then generate a page with userName, matched along with a picture of appointed rapper
-
-
-// tally system example:
-// kanye: 3
-// drake: 2
-// chance: 5

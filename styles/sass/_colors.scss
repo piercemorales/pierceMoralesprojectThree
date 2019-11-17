@@ -1,1 +1,21 @@
 $primaryColor: #eac632;
+
+
+@mixin mq-tablet {
+  @media (max-width: 940px) {
+    @content; 
+  }
+}
+
+@mixin mq-mobile  {
+  @media(max-width: 610px) {
+    @content;
+  }
+}
+
+@mixin mq-smallMobile {
+  @media(max-width:400px) {
+    @content;
+    
+  }
+}

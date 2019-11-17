@@ -205,6 +205,12 @@ body {
   max-width: 1200px;
 }
 
+@media (max-width: 940px) {
+  .wrapper {
+    width: 95%;
+  }
+}
+
 h2, label {
   text-transform: uppercase;
 }
@@ -213,6 +219,18 @@ h2 {
   font-weight: 400;
   padding: 50px 0px;
   font-size: 2.5rem;
+}
+
+@media (max-width: 940px) {
+  h2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 610px) {
+  h2 {
+    font-size: 2rem;
+  }
 }
 
 label {
@@ -272,6 +290,12 @@ body {
   max-width: 1200px;
 }
 
+@media (max-width: 940px) {
+  .wrapper {
+    width: 95%;
+  }
+}
+
 h2, label {
   text-transform: uppercase;
 }
@@ -280,6 +304,18 @@ h2 {
   font-weight: 400;
   padding: 50px 0px;
   font-size: 2.5rem;
+}
+
+@media (max-width: 940px) {
+  h2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 610px) {
+  h2 {
+    font-size: 2rem;
+  }
 }
 
 label {
@@ -385,13 +421,37 @@ main {
   margin: auto;
 }
 
+@media (max-width: 940px) {
+  .questionContent {
+    width: 100%;
+  }
+}
+
 .questionContent label {
   font-size: 2rem;
+}
+
+@media (max-width: 610px) {
+  .questionContent label {
+    font-size: 1.2rem;
+  }
 }
 
 .questionImage {
   width: 40%;
   margin: auto;
+}
+
+@media (max-width: 940px) {
+  .questionImage {
+    max-width: 30%;
+  }
+}
+
+@media (max-width: 610px) {
+  .questionImage {
+    display: none;
+  }
 }
 
 fieldset {
@@ -422,6 +482,12 @@ fieldset a {
       flex-wrap: wrap;
 }
 
+@media (max-width: 610px) {
+  .questionContainer {
+    width: 100%;
+  }
+}
+
 .questionContainer input {
   position: relative;
   bottom: 5px;
@@ -447,21 +513,17 @@ fieldset a {
   position: relative;
 }
 
+@media (max-width: 610px) {
+  .questionContainer input[type="radio"] + label::before {
+    width: 15px;
+    height: 15px;
+    top: 5px;
+  }
+}
+
 .questionContainer img {
   vertical-align: middle;
   width: 100%;
-}
-
-.footerMain {
-  background: #eac632;
-  text-align: center;
-  border-top: 2px solid #000;
-}
-
-.footerMain p {
-  padding: 5px;
-  text-transform: uppercase;
-  font-size: 1rem;
 }
 
 .resultContent {
@@ -504,6 +566,36 @@ fieldset a {
   padding: 20px 70px;
   color: white;
   border-radius: 10px;
+}
+
+@media (max-width: 610px) {
+  .submitBtn input {
+    padding: 10px 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  .submitBtn input {
+    width: 100%;
+  }
+}
+
+.footerMain {
+  background: #eac632;
+  text-align: center;
+  padding: 30px;
+  border-top: 2px solid #666666;
+}
+
+.footerMain p {
+  padding: 5px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.footerMain a {
+  background-color: #f3e08f;
 }
 
 .headerMain {

@@ -12,17 +12,13 @@ main {
   @include mq-tablet {
     width: 100%;
   }
- 
 
   label {
     font-size: 2rem;
     @include mq-mobile {
       font-size: 1.5rem;
     }
-
   }
-  
-    
 }
 .questionImage {
   width: 40%;

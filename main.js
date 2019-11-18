@@ -36,7 +36,6 @@ $(document).ready(function () {
     }
   };
 
-
   // smooth scroll
   var scroll = new SmoothScroll('a[href*="#"]', {
     speed: 1000,
@@ -49,11 +48,6 @@ $(document).ready(function () {
     $('html,body').scrollTop(0);
   });
   
-
-  
-  
-
-  
   // function that finds the answer of questions and tallies them
   $('form').on('submit', function(e){ 
     e.preventDefault();
@@ -64,11 +58,6 @@ $(document).ready(function () {
         rapperTally[result[i].value]++;
      } 
     } 
-
-
-
-
-
 
     // Finding the most tallied rapper and declaring as a variable
     const winner = Object.keys(rapperTally).reduce((a, b) => rapperTally[a] > rapperTally[b] ? a : b);
@@ -81,9 +70,6 @@ $(document).ready(function () {
         scrollTop: $("#quizEnd").offset().top
       }, 1000);
 
-  
-
   })
-
 
 });

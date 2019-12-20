@@ -56,7 +56,7 @@ $(document).ready(function () {
     // targeting the value in the object
     for (let i = 0; i < result.length; i++) {
         rapperTally[result[i].value]++;
-     } 
+      } 
     } 
 
     // Finding the most tallied rapper and declaring as a variable
@@ -64,7 +64,6 @@ $(document).ready(function () {
     if (winner) {
       $('.quizResult').html(`<div id="quizEnd" class="resultContent wrapper"><h2>You Are...</h2><h3>${winningOption[winner].name}</h3><p>${winningOption[winner].description}</p><img src="${winningOption[winner].image}"></div>`);
     } 
-     
     // finish button that smooth scrolls to the end result
       $('html, body').animate({
         scrollTop: $("#quizEnd").offset().top

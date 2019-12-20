@@ -1,7 +1,6 @@
-
 .headerMain {
-  // background: #f45905;
-  background-image: url(../assets/header-bg.png);
+  background-image: url(../assets/headerBackgroundImage.png);
+  background-color: red;
   background-size: cover;
   background-attachment: fixed;
   height: 100vh;
@@ -16,7 +15,6 @@
   flex-direction: column;
   justify-content: center; 
   align-items: center;
-
   h1 {
   font-size: 4.8rem;
   color: $primaryColor;
@@ -28,27 +26,18 @@
   }
 }
   h2 {
-  text-shadow: 0px 0px 15px #000;
+  text-shadow: 4px 3px 5px #000;
     width: 50%;
     color:#fff;
     @include mq-mobile {
       width: 100%;
     }
   }
-
-  
-
-    
-
-   
 }
-  
- 
 
 .speakerImage {
   display: flex;
   justify-content: space-between;
-
   img {
     max-width: 20%;
     min-height: 150px;

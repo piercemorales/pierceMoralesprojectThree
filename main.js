@@ -48,6 +48,10 @@ $(document).ready(function () {
     $('html,body').scrollTop(0);
   });
   
+
+  $('label').on('click' function(){
+    
+  })
   // function that finds the answer of questions and tallies them
   $('form').on('submit', function(e){ 
     e.preventDefault();

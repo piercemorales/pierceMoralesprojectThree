@@ -69,4 +69,5 @@ $(document).ready(function () {
         scrollTop: $("#quizEnd").offset().top
       }, 1000);
   })
+
 });

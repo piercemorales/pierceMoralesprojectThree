@@ -68,7 +68,5 @@ $(document).ready(function () {
       $('html, body').animate({
         scrollTop: $("#quizEnd").offset().top
       }, 1000);
-
   })
-
 });
